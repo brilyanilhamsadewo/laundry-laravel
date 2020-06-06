@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//routes web baru
+Route::get('/{any}', 'FrontController@index')->where('any', '.*');
